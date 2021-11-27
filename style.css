@@ -115,7 +115,7 @@ body{
   width: 100%;
 }
 .result__box{
-  width:40%;
+  width:20vh;
   color:aliceblue;
   font-family: 'Montserrat';
   font-size: 3vh;
@@ -144,9 +144,8 @@ body{
   background-color: #8B0000 ;
   color:azure;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 2px;
   font-weight:600;
-  font-size: 90%;
+  font-size: 80%;
   padding: 3px;
 }
 .btnGenerate:hover{
