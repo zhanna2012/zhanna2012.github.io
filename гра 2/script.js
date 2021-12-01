@@ -1,7 +1,7 @@
 var back = $("#btnBack");
 
 back.on("click", function(){
-  $(location).attr("href", "D:/Жанна/3 семестр/Веб/индив задание/index.html" );
+  $(location).attr("href", "D:/Жанна/2 семестр/Програмування в інтернеті/zhanna2012.github.io" );
 })
 
 var userName = prompt("Enter your username: ", "Гравець");

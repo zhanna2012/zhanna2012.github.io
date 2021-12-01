@@ -44,6 +44,7 @@ body{
   padding: 10px;
   transition: 0.5s ease-in;
   margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .game__box:hover{
   transform: scale3d(1.07,1.07,1.07);
