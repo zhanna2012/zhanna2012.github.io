@@ -63,7 +63,7 @@ container.appendChild(btnBack);
 var back = $("#btnBack");
 
 back.on("click", function(){
-  $(location).attr("href","../index.html" );
+  $(location).attr("href", "../index.html" );
 })
 
 
