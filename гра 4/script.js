@@ -63,7 +63,7 @@ container.appendChild(btnBack);
 var back = $("#btnBack");
 
 back.on("click", function(){
-  $(location).attr("href","D:/Жанна/2 семестр/Програмування в інтернеті/zhanna2012.github.io/index.html" );
+  $(location).attr("href","../index.html" );
 })
 
 
