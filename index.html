@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html>
-<TITLE>Lab_11</TITLE>
+<TITLE>All games</TITLE>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css"> 
 </HEAD>
 <BODY>
-    <section class = "main__box">
-    <div id = "word" class = "word"> Word</div>
-    <div class = "result__icon">
-        <div id = "win1" class =  "invisible win__box_1">
-        <p class = "res_title">У вас високий рівень англіської </p>
-       </div>
-       <div id = "win2" class = "invisible win__box_2">
-        <p class = "res_title">У вас низький рівень англіської </p>
-       </div>
-       <div id = "win3" class = "invisible win__box_3">
-        <p class = "res_title">Ви на шляху до високого рівня англійської!</p>
-       </div>
-   </div>
-    <div id = "num_row"> 
-        <span id = "translated" class = "number">0</span>
-        <span class = "number">/</span>
-        <span id = "not_translated" class = "number">10</span>
+    <section class = "container">
+        <p class = "title">
+            Choose game
+        </p>
+        <div class = "game__row">
+
+        <div id = "game__box_1" class = "game__box">
+            <div class = "subtitle"> Проста гра</div>
+            <div class = "img__box"> 
+            <img src = "game_1.PNG" class = "img"  alt = "game">
+           </div>
+        </div>
+
+        <div id = "game__box_2" class = "game__box">
+            <div class = "subtitle" > Гра "21" </div>
+            <div class = "img__box"> 
+            <img src = "game_2.PNG" class = "img" alt = "game">
+          </div>
+        </div>
+
+        <div id = "game__box_3" class = "game__box">
+            <div class = "subtitle" > Гра "Однорукий бандит" </div>
+            <div class = "img__box"> 
+            <img src = "game_3.PNG" class = "img" alt = "game">
+           </div>
+        </div>
+        <div id = "game__box_4" class = "game__box">
+            <div class = "subtitle" > Магічна куля </div>
+            <div class = "img__box"> 
+            <img src = "game_4.PNG" class = "img" alt = "game">
+           </div>
+        </div>
     </div>
-    <input id = "input_word" class = "input_word">
- <div class = "result__row">
-    <div class = "result__box result__box_1">
-        <p>Вірно</p>
-        <span id = "correct" class = "result">0</span>
-    </div>
-    <div class = "result__box result__box_2">
-        <p>Невірно</p>
-        <span id = "incorrect" class = "result">0</span>
-    </div>  
- </div>
-    <button id = "again" class = "btnGenerate">Спробувати знову</button>
-</section>
+ </section>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src = 'script.js'></script>
 </BODY>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<TITLE>Lab_9</TITLE>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css"> 
+</HEAD>
+<BODY>
+    <div class = "container">
+    <div class = "main__box">
+    <h1 id  = "title" class = "title">Випробуй свою удачу!</h1>
+    <div class = "score__row">
+    <div class = "score__box">
+    <p id  = "name" class = "name">User </p>
+    <div id = "score_1" class = "score"> 0</div>
+    </div>
+    <div class = "score__box">
+    <p class = "name"> Computer</p>
+    <div id = "score_2" class = "score"> 0</div>
+    </div>
+    <div class = "subtitle__row">
+    <p id = "subtitle" class = "subtitle"> Генерація карт</p>
+    </div>
+    </div>
+    <div class = "result__box">
+        <div id = "win1" class = "invisible win__box_1">
+        <p class = "res_title">Ви виграли </p>
+        <img src = "result_1.png" alt = "result" class = "res_picture_1">
+       </div>
+       <div id = "win2" class = "invisible win__box_2">
+        <p class = "res_title">Ви програли 
+        <img src = "result_2.png" alt = "result" class = "res_picture_2"></p>
+       </div>
+       <div id = "win3" class = "invisible win__box_3">
+        <p class = "res_title">Нічия 
+        <img src = "result_3.png" alt = "result" class = "res_picture_2"></p>
+       </div>
+</div>
+    <div class = "cards__row">
+        <div class = "img__box">
+        <img id = "card_place_1" src = "back.PNG" class = "card" alt = "card">
+        </div>
+        <div class = "img__box">
+        <img id = "card_place_2" src = "back.PNG" class = "card" alt = "card">
+        </div>   
+         </div>
+    <button id = "btnGenerate" class = "btnGenerate"> Почати гру</button>
+</div>
+<button id = "btnBack" class = "btnBack"> Повернутись на головну</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src = 'script.js'></script>
+</BODY>
+</HTML> 
