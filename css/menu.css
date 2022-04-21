@@ -1,0 +1,21 @@
+.menu_section{
+    width: 20%;
+    height: 85vh;
+    border-color: #333333;
+    border-style: solid;
+    border-width: 1px;
+  
+}
+.head_menu h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.nav_item a {
+    color: #333333;
+}
+.nav_item {
+    margin-bottom: 10px;
+}
+.nav_warapper {
+    padding: 20px;
+}

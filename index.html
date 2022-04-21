@@ -1,44 +1,89 @@
 <!DOCTYPE html>
 <html>
-<TITLE>All games</TITLE>
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css"> 
-</HEAD>
-<BODY>
-    <section class = "container">
-        <p class = "title">
-            Choose game
-        </p>
-        <div class = "game__row">
-        <div id = "game__box_1" class = "game__box">
-            <div class = "subtitle"> Проста гра</div>
-            <div class = "img__box"> 
-            <img src = "game_1.PNG" class = "img"  alt = "game">
-           </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class = "header-wrapper"> 
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class = "header_block">
+                <div class = "logo_wrapper">
+                    <a href="#" class = "logo">KinoMap</a>
+                </div>
+                <form name = "search_form" class="search_form" id = "form_main">
+                    <input type="text" name = "search" placeholder="Search" class = "input_form_search" id = "input_main">
+                </form>
+            </div>
         </div>
-
-        <div id = "game__box_2" class = "game__box">
-            <div class = "subtitle" > Гра "21" </div>
-            <div class = "img__box"> 
-            <img src = "game_2.PNG" class = "img" alt = "game">
-          </div>
+    </header>
+    <section class = "menu_section_drower"  id = "menu_section">
+        <div class = "menu_wrapper">
+            <div class = "head_menu">
+                <h2>Menu</h2>
+                <hr>
+            </div>
+            <form name = "search_form" class="search_form" id = "form_drawer">
+                <input type="text" name = "search" placeholder="Search" class = "input_form_search" id = "input_drawer">
+            </form>
+            <nav>
+                <div class = "nav_warapper">
+                    <ul class = "menu_list">
+                        <li class = "nav_item">
+                            <a href="#" class = 'get_popular' id = "get_popular_drawer">Popular</a>
+                        </li>
+                        <hr>
+                        <li class = "nav_item">
+                            <a href="#" class = 'get_top' id = "get_top_drawer">Top rated movies</a>
+                        </li>
+                        <hr>
+                        <li class = "nav_item">
+                            <a href="#" class = 'get_upcoming' id = "get_upcoming_drawer">Upcoming movies</a>
+                        </li>
+                        <hr>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div id = "game__box_3" class = "game__box">
-            <div class = "subtitle" > Гра "Однорукий бандит" </div>
-            <div class = "img__box"> 
-            <img src = "game_3.PNG" class = "img" alt = "game">
-           </div>
-        </div>
-        <div id = "game__box_4" class = "game__box">
-            <div class = "subtitle" > Магічна куля </div>
-            <div class = "img__box"> 
-            <img src = "game_4.PNG" class = "img" alt = "game">
-           </div>
-        </div>
-    </div>
- </section>
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src = 'script.js'></script>
-</BODY>
-</HTML> 
+    </section>
+    <main class = "main_section" id = "main_section">
+        <section class = "menu_section"  id = "menu_section">
+            <div class = "menu_wrapper">
+                <div class = "head_menu">
+                    <h2>Menu</h2>
+                    <hr>
+                </div>
+                <nav>
+                    <div class = "nav_warapper">
+                        <ul class = "menu_list">
+                            <li class = "nav_item">
+                                <a href="#" class = 'get_popular' id = "get_popular_main">Popular</a>
+                            </li>
+                            <hr>
+                            <li class = "nav_item">
+                                <a href="#" class = 'get_top' id = "get_top_main">Top rated movies</a>
+                            </li>
+                            <hr>
+                            <li class = "nav_item">
+                                <a href="#" class = 'get_upcoming' id = "get_upcoming_main">Upcoming movies</a>
+                            </li>
+                            <hr>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class = "movie_platform">
+            <div class="movies"></div>
+        </section>
+    </main>
+<script defer src="js/index.js"></script>
+</body>
+</html>
