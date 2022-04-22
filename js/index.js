@@ -73,6 +73,15 @@ async function getMovies(url) {
   console.log(respData.results);
   showMovies(respData.results);
 }
+function getClassByRate(vote) {
+  if (vote >= 7) {
+    return "green";
+  } else if (vote > 5) {
+    return "orange";
+  } else {
+    return "red";
+  }
+}
   
 function showMovies(data) {
     const moviesEl = document.querySelector(".movies");
@@ -80,6 +89,7 @@ function showMovies(data) {
     document.querySelector(".movies").innerHTML = "";
   
     data.forEach((movie) => {
+      console.log(typeof movie.vote_average)
       const movieEl = document.createElement("div");
       movieEl.classList.add("movie");
       movieEl.innerHTML = `
@@ -93,10 +103,68 @@ function showMovies(data) {
         </div>
         <div class="movie__info">
           <div class="movie__title">${movie.original_title}</div>
+          ${
+            movie.vote_average &&
+            `
+          <div class="movie__average movie__average--${getClassByRate(movie.vote_average)}">${movie.vote_average}</div>
+          `
+          }
         </div>
+
           `;
-      moviesEl.appendChild(movieEl);
+          moviesEl.appendChild(movieEl);
+          movieEl.addEventListener("click", () => {
+            let modal = document.getElementById('modal');
+            let modal_show = document.getElementById('show_modal');
+            modal.innerHTML = ` <div id="close_modal">+</div>
+            <div class="modal_wrapper">
+                <div class="movie__cover-modal">
+                    <picture>
+                        <source media="(max-width: 1000px)" 
+                        srcset="https://image.tmdb.org/t/p/w500${movie.backdrop_path}">
+                        <img
+                        src="https://image.tmdb.org/t/p/w500${movie.poster_path}"
+                        class="movie__img"
+                        alt="img"
+                      />
+                      </picture>
+                  </div>
+                  <div class = "movie_info--modal">
+                      <div class = "movie__title"> 
+                          <h2 class = "movie__title_text">${movie.original_title}</h2>
+                          ${
+                            movie.vote_average &&
+                            `
+                          <div class="movie__average_modal movie__average--${getClassByRate(movie.vote_average)}">${movie.vote_average}</div>
+                          `
+                          }
+                        </div>
+                      <div class = "modal__block">
+                        <span class = "modal_subtitle">Popularity: </span> 
+                        <br>
+                        <hr>
+                          ${movie.popularity}</div>
+                      <div class = "modal__block">
+                          <span class = "modal_subtitle">Relese date: </span>
+                          <br>
+                          <hr>
+                          ${movie.release_date}</div>
+                      <div class = "modal__block">
+                        <span class = "modal_subtitle">Overview: </span>
+                        <br>
+                        <hr> ${movie.overview}</div>
+                  </div>
+                </div>`
+            console.log('done');
+            modal_show.classList.toggle('disp_mone');
+            let close_modal = document.getElementById('close_modal');
+            close_modal.onclick = function() { 
+              modal_show.classList.toggle('disp_mone');
+           };
+          })
+
     });
+
 }
 
 const form_main = document.getElementById("form_main");
