@@ -1,0 +1,73 @@
+<section class="banner">
+  <div class="banner-title">
+    <div class="banner-title__main">Широкий асортимент найсмачніших страв</div>
+    <div class="banner-title_app" >
+      <mat-icon>system_update</mat-icon>
+      <p> Насолоджуйтесь миттєвою доставкою та оплатою </p>
+    </div>
+    <button mat-raised-button color="accent"
+    class="download-button">
+      <mat-icon>link</mat-icon>
+      Завантажити додаток</button>
+  </div>
+  <div class="banner-image_wrapper">
+    <img src="assets/banner/banner.PNG" alt="banner">
+  </div>
+</section>
+<section class="advantages">
+  <h3>Наші переваги</h3>
+  <mat-tab-group class="advantages-tabs" mat-align-tabs="center">
+    <mat-tab label="Легка авторизація" class="advantages-tab">
+      <div class="advantages-tab__wrapper">
+      <div class="advantages-tabs__par" >
+        <p>Авторизація в застосунку <strong>Delivery App</strong> відбувається за допомогою:</p>
+        <ul>
+          <li>Введення електронної пошти та паролю користувача</li>
+          <li>За допомогою вже існуючого акаунту Google</li>
+        </ul>
+      </div>
+      <div class="advantages-tabs__img">
+        <img src="assets/home/authorization.png" alt="authorization">
+      </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Зручний та зрозумілий застосунок" class="advantages-tab">
+      <div class="advantages-tab__wrapper">
+        <div class="advantages-tabs__par" >
+          <p>Застосунок <strong>Delivery App</strong> містить в собі всі необхідні функції для
+          комфортного замовлення доставки: </p>
+          <ol>
+            <li>Зареєструйся за допомогою акаунту Google</li>
+            <li>Вибери категорію, яка тебе цікавить</li>
+            <li>Додай їжу в кошик</li>
+            <li>Замовляй!</li>
+          </ol>
+        </div>
+        <div class="advantages-tabs__img screen">
+          <img src="assets/home/screen.PNG" alt="screen">
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Широкий вибір категрій" class="advantages-tab">
+      <div class="advantages-tab__wrapper">
+        <div class="advantages-tabs__par" >
+          <p><strong>Delivery App</strong> містить широкий вибір категорій вибору страв:</p>
+          <ul>
+            <li>Азіатська кухня</li>
+            <li>Італійська кухня</li>
+            <li>Фастфуд</li>
+            <li>Та багато іншого!</li>
+          </ul>
+        </div>
+        <div class="advantages-tabs__img categories">
+          <img src="assets/home/categories.PNG" alt="authorization">
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</section>
+
+<section class="product-table">
+  <h3>Product Backlog</h3>
+  <app-product-table></app-product-table>
+</section>

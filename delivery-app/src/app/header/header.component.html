@@ -1,0 +1,23 @@
+<mat-toolbar color="accent">
+  <button mat-icon-button class="example-icon"
+          (click)="onToggleSidenav()"
+          aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div class="logo-wrapper">
+    <img src="assets/logo/logo.png" alt="logo">
+  </div>
+  <span class="logo-header">Delivery App</span>
+  <span class="example-spacer"></span>
+  <div class="navigation-bar">
+    <button mat-raised-button color="primary"
+            class="navigation-bar__button"
+            routerLink="/home">Головна</button>
+    <button mat-raised-button color="primary"
+            class="navigation-bar__button"
+            routerLink="/design">Дизайн</button>
+    <button mat-raised-button color="primary"
+            class="navigation-bar__button"
+            routerLink="/contacts">Про нас</button>
+  </div>
+</mat-toolbar>
