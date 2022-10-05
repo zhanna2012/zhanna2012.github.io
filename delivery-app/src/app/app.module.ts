@@ -20,6 +20,7 @@ import { MatTabsModule } from "@angular/material/tabs";
 import { MatTableModule } from '@angular/material/table';
 import { ProductTableComponent } from './product-table/product-table.component';
 import {MatStepperModule} from "@angular/material/stepper";
+import {MatCardModule} from "@angular/material/card";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -52,7 +53,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     MatTabsModule,
     MatTableModule,
-    MatStepperModule
+    MatStepperModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

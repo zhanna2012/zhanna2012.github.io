@@ -1,25 +1,112 @@
-<mat-stepper orientation="vertical" [linear]="isLinear" #stepper>
+<mat-stepper orientation="vertical">
   <mat-step>
-      <ng-template matStepLabel>Fill out your name</ng-template>
-      <div>TEST</div>
-      <div>
-        <button mat-button matStepperNext>Next</button>
+    <ng-template matStepLabel>Авторизація користувача</ng-template>
+    <ng-template matStepContent>
+      <div class="step">
+        <div class="step__text" >
+          <p>Користувач вводить дані від свого облікового запису. За умови, що користувач ввів коректні дані -
+            йому надається доступ до свого облікового запису,
+            в іншому випадку користувач отримує повідомлення про те, що дані введено неправильно</p>
+        </div>
+        <div class="step__img">
+          <img src="assets/design/auth_screen.jpg" alt="screen">
+        </div>
       </div>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
   </mat-step>
   <mat-step>
-      <ng-template matStepLabel>Fill out your address</ng-template>
-    <div>TEST</div>
-      <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
+    <ng-template matStepLabel>Головний екран застосунку</ng-template>
+    <ng-template matStepContent>
+      <div class="step">
+        <div class="step__text" >
+          <p>На головному екрані застосунку користувач може переглянути найпопулрніші категорії та новинки страв</p>
+        </div>
+        <div class="step__img">
+          <img src="assets/design/main_screen.jpg" alt="screen">
+        </div>
       </div>
-  </mat-step>
-  <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
-    <p>You are now done.</p>
-    <div>
       <button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button>
-    </div>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Виведення списку всіх категорій їжі</ng-template>
+    <ng-template matStepContent>
+      <div class="step">
+        <div class="step__text" >
+          <p>Користувач може переглянути весь перелік доступних категорій для замовлення</p>
+        </div>
+        <div class="step__img">
+          <img src="assets/design/categories_screen.jpg" alt="screen">
+        </div>
+      </div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Пошук по товару</ng-template>
+    <ng-template matStepContent>
+      <div class="step">
+        <div class="step__text" >
+          <p>Користувач може знайти певний товар за назвою</p>
+        </div>
+        <div class="step__img">
+          <img src="assets/design/search_screen.jpg" alt="screen">
+        </div>
+      </div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Можливість додати товар до кошику</ng-template>
+    <ng-template matStepContent>
+      <div class="step">
+        <div class="step__text" >
+          <p>Користувач може додати бажаний товар до кошика для замовлень</p>
+        </div>
+        <div class="step__img">
+          <img src="assets/design/cart_screen.jpg" alt="screen">
+        </div>
+      </div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Улюблені страви</ng-template>
+    <ng-template matStepContent>
+      <div class="step">
+        <div class="step__text" >
+          <p>Користувач може переглянути список страв, які він замовляє найчастіше</p>
+        </div>
+        <div class="step__img">
+          <img src="assets/design/favorites_screen.jpg" alt="screen">
+        </div>
+      </div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Функції в розробці</ng-template>
+    <ng-template matStepContent>
+      <div class="step">
+        <div class="step__text" >
+          <ol>
+            <li>Введення особистих даних для оформлення замовлення</li>
+            <li>Підтвердження замовлення через email/sms</li>
+            <li>Поза застосунком - кур'єр повинен зв'язатися із замовником</li>
+            <li>Залишення відгуків про товар та оцінка </li>
+          </ol>
+        </div>
+        <div class="step__img">
+          <img src="assets/design/greeting_screen.jpg" alt="screen">
+        </div>
+      </div>
+      <button mat-button matStepperPrevious>Back</button>
+    </ng-template>
   </mat-step>
 </mat-stepper>

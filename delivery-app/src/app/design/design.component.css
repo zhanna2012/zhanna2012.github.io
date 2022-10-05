@@ -1,7 +1,53 @@
-.mat-stepper-vertical {
-  margin-top: 8px;
+mat-stepper {
+  width: 100%;
 }
 
-.mat-form-field {
-  margin-top: 16px;
+.step {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.step__text {
+  width: 450px;
+  height: 400px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step__img {
+  width: 230px;
+  height: 430px;
+  margin: 10px;
+}
+
+.step__img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 900px) {
+  .step__text {
+    font-size: 15px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .step__text {
+    width: 100%;
+    height: auto;
+  }
+  .step__img {
+    width: 200px;
+    height: 350px;
+  }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-interface ProductBacklogModel {
+export interface ProductBacklogModel {
   priority: number,
   task: string,
   storyPoints: number,
@@ -45,6 +45,17 @@ const ELEMENT_DATA: ProductBacklogModel[] = [
   },
 ]
 
+
+export interface ProductBacklogModel {
+  priority: number;
+  task: string;
+  storyPoints: number;
+  tag: string;
+  sprint: string
+}
+
+
+
 @Component({
   selector: 'app-product-table',
   templateUrl: './product-table.component.html',
@@ -56,6 +67,7 @@ export class ProductTableComponent implements OnInit {
 
   displayedColumns: string[] = ['priority', 'task', 'storyPoints', 'tag', 'sprint'];
   dataSource = ELEMENT_DATA;
+
 
   ngOnInit(): void {
   }
