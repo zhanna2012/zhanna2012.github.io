@@ -21,6 +21,8 @@ import { MatTableModule } from '@angular/material/table';
 import { ProductTableComponent } from './product-table/product-table.component';
 import {MatStepperModule} from "@angular/material/stepper";
 import {MatCardModule} from "@angular/material/card";
+import { TechnologiesComponent } from './technologies/technologies.component';
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -37,7 +39,8 @@ const routes: Routes = [
     HomeComponent,
     DesignComponent,
     ContactsComponent,
-    ProductTableComponent
+    ProductTableComponent,
+    TechnologiesComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,8 @@ const routes: Routes = [
     MatTabsModule,
     MatTableModule,
     MatStepperModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
