@@ -30,8 +30,7 @@ import {EmailService} from "./email.service";
 import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', component: HomeComponent},
   { path: 'design', component: DesignComponent },
   { path: 'contacts', component: ContactsComponent }
 ];
