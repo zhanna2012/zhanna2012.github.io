@@ -23,6 +23,11 @@ import {MatStepperModule} from "@angular/material/stepper";
 import {MatCardModule} from "@angular/material/card";
 import { TechnologiesComponent } from './technologies/technologies.component';
 import {MatProgressBarModule} from "@angular/material/progress-bar";
+import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
+import { ReactiveFormsModule } from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import {EmailService} from "./email.service";
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -40,27 +45,31 @@ const routes: Routes = [
     DesignComponent,
     ContactsComponent,
     ProductTableComponent,
-    TechnologiesComponent
+    TechnologiesComponent,
+    FeedbackFormComponent,
+    FooterComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatInputModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatSelectModule,
-    RouterModule,
-    MatListModule,
-    RouterModule.forRoot(routes),
-    MatTabsModule,
-    MatTableModule,
-    MatStepperModule,
-    MatCardModule,
-    MatProgressBarModule
-  ],
-  providers: [],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatInputModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatSidenavModule,
+        MatSelectModule,
+        RouterModule,
+        MatListModule,
+        RouterModule.forRoot(routes),
+        MatTabsModule,
+        MatTableModule,
+        MatStepperModule,
+        MatCardModule,
+        MatProgressBarModule,
+        ReactiveFormsModule,
+        HttpClientModule
+    ],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

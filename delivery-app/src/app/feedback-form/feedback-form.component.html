@@ -1,0 +1,19 @@
+<section class="feedback">
+  <h3>Залиш свій відгук</h3>
+  <form [formGroup]="feedbackForm" (ngSubmit)="onSubmit(feedbackForm.value)">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput
+               formControlName="email"
+               required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Фідбек</mat-label>
+        <textarea  matInput
+                   formControlName="feedback"
+                   required></textarea>
+      </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!feedbackForm.valid">Submit</button>
+  </form>
+</section>
+
