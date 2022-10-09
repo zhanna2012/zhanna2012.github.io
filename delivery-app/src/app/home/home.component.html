@@ -1,12 +1,12 @@
-<section class="banner">
+<section class="banner" id="home">
   <div class="banner-title">
-    <div class="banner-title__main">Широкий асортимент найсмачніших страв</div>
+    <div class="banner-title__main" id="banner-title__main">Широкий асортимент найсмачніших страв</div>
     <div class="banner-title_app" >
       <mat-icon>system_update</mat-icon>
       <p> Насолоджуйтесь миттєвою доставкою та оплатою </p>
     </div>
     <button mat-raised-button color="accent"
-    class="download-button">
+    class="download-button" id="download-button">
       <mat-icon>link</mat-icon>
       Завантажити додаток</button>
   </div>
@@ -15,7 +15,7 @@
   </div>
 </section>
 <section class="advantages">
-  <h3>Наші переваги</h3>
+  <h3 id="advantages__header">Наші переваги</h3>
   <mat-tab-group class="advantages-tabs" mat-align-tabs="center">
     <mat-tab label="Легка авторизація" class="advantages-tab">
       <div class="advantages-tab__wrapper">
@@ -26,7 +26,7 @@
           <li>За допомогою вже існуючого акаунту Google</li>
         </ul>
       </div>
-      <div class="advantages-tabs__img">
+      <div class="advantages-tabs__img" id="authorization__img">
         <img src="assets/home/authorization.png" alt="authorization">
       </div>
       </div>
@@ -68,10 +68,13 @@
 </section>
 <section class="product-table">
   <h3>Product Backlog</h3>
-  <app-product-table></app-product-table>
+  <app-product-table id="product__table"></app-product-table>
 </section>
 
 <section class="product-table">
   <h3>Технології</h3>
-  <app-technologies></app-technologies>
+  <app-technologies id="technologies"></app-technologies>
 </section>
+
+<app-feedback-form id="feedback__form"></app-feedback-form>
+

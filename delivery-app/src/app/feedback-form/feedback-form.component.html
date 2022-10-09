@@ -6,15 +6,17 @@
         <input matInput
                formControlName="email"
                required
-               class="email">
+               class="email"
+               id="email">
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Фідбек</mat-label>
         <textarea  matInput
                    formControlName="feedback"
+                   id="feedback"
                    required></textarea>
       </mat-form-field>
-    <button mat-raised-button color="primary" type="submit" [disabled]="!feedbackForm.valid">Submit</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!feedbackForm.valid" id="submit_button">Submit</button>
   </form>
 </section>
 

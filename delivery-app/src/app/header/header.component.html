@@ -4,20 +4,23 @@
           aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <div class="logo-wrapper">
+  <div class="logo-wrapper" id="logo-wrapper">
     <img src="assets/logo/logo.png" alt="logo">
   </div>
-  <span class="logo-header">Delivery App</span>
+  <span class="logo-header" id="logo-header">Delivery App</span>
   <span class="example-spacer"></span>
   <div class="navigation-bar">
     <button mat-raised-button color="primary"
             class="navigation-bar__button"
+            id="home_nav"
             routerLink="/">Головна</button>
     <button mat-raised-button color="primary"
             class="navigation-bar__button"
+            id="design_nav"
             routerLink="/design">Дизайн та функціонал</button>
     <button mat-raised-button color="primary"
             class="navigation-bar__button"
+            id="contacts_nav"
             routerLink="/contacts">Про нас</button>
   </div>
 </mat-toolbar>
